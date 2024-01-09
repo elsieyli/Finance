@@ -20,3 +20,13 @@ input, button{
     padding:1rem;
     border-radius: 10px;
 }
+
+.expense-item {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iFinance</title>
-    <link href="{{ url_for('static', filename='styles/style.css)}}" rel= "stylesheet"/>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet"/>
 </head>
 <body>
-    <h1>Add Expense</h1>
-    <form action="/expense">
-        <input type="text" name ="bill" id="bill" placeholder = "Enter an Expense"/>
-        <button type = "submit">Submit</button>
+    <h1>iFinance</h1>
+    <form id="expense-form"> <!-- Added form tag with an ID -->
+        <input type="text" name="bill" id="bill" placeholder="Enter an Expense" required>
+        <input type="text" name="ExpenseName" id="ExpenseName" placeholder="Enter Expense Name" required>
+        <input type="date" name="due" id="due" placeholder="Enter Due Date" required> 
+        <select name="urgency" id="urgency" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button type="submit">Submit</button>
     </form>
+    <div id="expense-list">
+        <!-- Expenses will be displayed here -->
+    </div>
+    <script src="list.js"></script>
 </body>
 </html>
