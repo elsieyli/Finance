@@ -1,1 +1,1 @@
-print("Lock in hello !")
+print("Lock in hello ur moms a hoe !")
