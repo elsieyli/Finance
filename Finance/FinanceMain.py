@@ -1,1 +1,0 @@
-print("Lock in hello ur moms a hoe !")
