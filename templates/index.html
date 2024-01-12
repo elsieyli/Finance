@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iFinance</title>
-    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 </head>
 <body>
     <h1>iFinance</h1>
-    <form id="expense-form"> <!-- Added form tag with an ID -->
+    <form id="expense-form"> 
         <input type="text" name="bill" id="bill" placeholder="Enter an Expense" required>
         <input type="text" name="ExpenseName" id="ExpenseName" placeholder="Enter Expense Name" required>
         <input type="date" name="due" id="due" placeholder="Enter Due Date" required> 
